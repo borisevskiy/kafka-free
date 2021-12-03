@@ -95,6 +95,9 @@ cd kafka_2.13-2.7.0
 Создаем топик с регистрациями
 ```
 ./bin/kafka-topics.sh --create --topic registrations --bootstrap-server localhost:9092
+```
+Создаем топик (kafka в docker контейнере)
+```
 kafka-topics --create --topic registration --bootstrap-server localhost:29092 --partitions 1 --replication-factor 1
 ```
 Посмотрим на его конфигурацию
